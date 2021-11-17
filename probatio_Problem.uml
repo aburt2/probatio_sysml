@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_SJvvoEcfEey5-J7sHBRysQ" name="probatio_Problem">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_SNMFMEcfEey5-J7sHBRysQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_SNY5gEcfEey5-J7sHBRysQ">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jI5YYEcfEey5-J7sHBRysQ" name="1 Problem Domain">
+      <packagedElement xmi:type="uml:Package" xmi:id="_lrBW4EcfEey5-J7sHBRysQ" name="1 Black Box">
+        <packagedElement xmi:type="uml:Package" xmi:id="_oFSZ4EcfEey5-J7sHBRysQ" name="1 Stakeholder Needs">
+          <packagedElement xmi:type="uml:Class" xmi:id="_00gegEcfEey5-J7sHBRysQ" name="SN-1 User Needs">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_WwaG0EchEey5-J7sHBRysQ" name="SN-1.1 Speed"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_r9HVIEchEey5-J7sHBRysQ" name="SN-1.2 Initial Paths"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_4aZ8QEchEey5-J7sHBRysQ" name="SN-1.3 Modular"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_fpy3cEcjEey5-J7sHBRysQ" name="SN-1.4 Music"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mA5cEEcmEey5-J7sHBRysQ" name="2 Use Cases"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_T0qR8EciEey5-J7sHBRysQ" name="3 System Context">
+          <packagedElement xmi:type="uml:Class" xmi:id="_cSWP8EciEey5-J7sHBRysQ" name="Toolkit in Use">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ttzvUEckEey5-J7sHBRysQ" name="Property1" type="_zbPzQEckEey5-J7sHBRysQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_74FcsEckEey5-J7sHBRysQ" name="Property2" type="_8pTeQEckEey5-J7sHBRysQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_-Mo5QEckEey5-J7sHBRysQ" name="Property3" type="_DliQkEclEey5-J7sHBRysQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Kf2XUEclEey5-J7sHBRysQ" name="Property4" type="_L6voAEclEey5-J7sHBRysQ" aggregation="composite"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zbPzQEckEey5-J7sHBRysQ" name="Sound Producing Unit"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_8pTeQEckEey5-J7sHBRysQ" name="Artist"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DliQkEclEey5-J7sHBRysQ" name="Sensor Interface"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_L6voAEclEey5-J7sHBRysQ" name="Mapping Handler"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SKpukEcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SKqVoEcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNF-kEcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNF-kUcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNGloEcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNGloUcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNHMsEcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNHMsUcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNHzwEcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNHzwUcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNIa0EcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNIa0UcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNJB4EcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNJB4UcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNJB4kcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNJo8EcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNKQAEcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNKQAUcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SNKQAkcfEey5-J7sHBRysQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SNK3EEcfEey5-J7sHBRysQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_02-jsEcfEey5-J7sHBRysQ" base_NamedElement="_00gegEcfEey5-J7sHBRysQ" id="SN-1" text="&#xD;&#xA;" base_Class="_00gegEcfEey5-J7sHBRysQ"/>
+  <Requirements:Requirement xmi:id="_WwcjEEchEey5-J7sHBRysQ" base_NamedElement="_WwaG0EchEey5-J7sHBRysQ" id="SN-1.1" text="The prototyping toolkit shall reduce the time to make a functional DMI prototype" base_Class="_WwaG0EchEey5-J7sHBRysQ"/>
+  <Requirements:Requirement xmi:id="_r9LmkEchEey5-J7sHBRysQ" base_NamedElement="_r9HVIEchEey5-J7sHBRysQ" id="SN-1.2" text="The prototyping toolkit shall provide initial paths for the user to develop." base_Class="_r9HVIEchEey5-J7sHBRysQ"/>
+  <Requirements:Requirement xmi:id="_4acYgEchEey5-J7sHBRysQ" base_NamedElement="_4aZ8QEchEey5-J7sHBRysQ" id="SN-1.3" text="The prototyping toolkit will have a modular environment." base_Class="_4aZ8QEchEey5-J7sHBRysQ"/>
+  <Blocks:Block xmi:id="_cSZTQEciEey5-J7sHBRysQ" base_Class="_cSWP8EciEey5-J7sHBRysQ"/>
+  <Requirements:Requirement xmi:id="_fp16wEcjEey5-J7sHBRysQ" base_NamedElement="_fpy3cEcjEey5-J7sHBRysQ" id="SN-1.4" text="The toolkit shall be able to generate sound.&#xD;&#xA;" base_Class="_fpy3cEcjEey5-J7sHBRysQ"/>
+  <Blocks:Block xmi:id="_zbS2kEckEey5-J7sHBRysQ" base_Class="_zbPzQEckEey5-J7sHBRysQ"/>
+  <Blocks:Block xmi:id="_8pWhkEckEey5-J7sHBRysQ" base_Class="_8pTeQEckEey5-J7sHBRysQ"/>
+  <Blocks:Block xmi:id="_DllT4EclEey5-J7sHBRysQ" base_Class="_DliQkEclEey5-J7sHBRysQ"/>
+  <Blocks:Block xmi:id="_L6xdMEclEey5-J7sHBRysQ" base_Class="_L6voAEclEey5-J7sHBRysQ"/>
+</xmi:XMI>
