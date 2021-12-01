@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Allocations="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_SJvvoEcfEey5-J7sHBRysQ" name="probatio_Problem">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_SNMFMEcfEey5-J7sHBRysQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -17,18 +17,73 @@
             <nestedClassifier xmi:type="uml:Class" xmi:id="_fpy3cEcjEey5-J7sHBRysQ" name="SN-1.4 Music"/>
           </packagedElement>
         </packagedElement>
-        <packagedElement xmi:type="uml:Package" xmi:id="_mA5cEEcmEey5-J7sHBRysQ" name="2 Use Cases"/>
-        <packagedElement xmi:type="uml:Package" xmi:id="_T0qR8EciEey5-J7sHBRysQ" name="3 System Context">
-          <packagedElement xmi:type="uml:Class" xmi:id="_cSWP8EciEey5-J7sHBRysQ" name="Toolkit in Use">
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_ttzvUEckEey5-J7sHBRysQ" name="Property1" type="_zbPzQEckEey5-J7sHBRysQ" aggregation="composite"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_74FcsEckEey5-J7sHBRysQ" name="Property2" type="_8pTeQEckEey5-J7sHBRysQ" aggregation="composite"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_-Mo5QEckEey5-J7sHBRysQ" name="Property3" type="_DliQkEclEey5-J7sHBRysQ" aggregation="composite"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_Kf2XUEclEey5-J7sHBRysQ" name="Property4" type="_L6voAEclEey5-J7sHBRysQ" aggregation="composite"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_mA5cEEcmEey5-J7sHBRysQ" name="2 Use Cases">
+          <packagedElement xmi:type="uml:Association" xmi:id="_yN_TEFHyEeym0vs1Aeoq4Q" memberEnd="_yN_6IVHyEeym0vs1Aeoq4Q _yOAhMFHyEeym0vs1Aeoq4Q">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yN_TEVHyEeym0vs1Aeoq4Q" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yN_6IFHyEeym0vs1Aeoq4Q" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_yN_6IVHyEeym0vs1Aeoq4Q" name="make sound" type="_i2SwUFHyEeym0vs1Aeoq4Q" association="_yN_TEFHyEeym0vs1Aeoq4Q"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_yOAhMFHyEeym0vs1Aeoq4Q" name="artist" type="_8pTeQEckEey5-J7sHBRysQ" association="_yN_TEFHyEeym0vs1Aeoq4Q"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_zbPzQEckEey5-J7sHBRysQ" name="Sound Producing Unit"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_i2SwUFHyEeym0vs1Aeoq4Q" name="Change Mappings" classifierBehavior="_H_QKgFH0Eeym0vs1Aeoq4Q" subject="_cSWP8EciEey5-J7sHBRysQ">
+            <ownedBehavior xmi:type="uml:Activity" xmi:id="_H_QKgFH0Eeym0vs1Aeoq4Q" name="Activity1" node="_uSXYwFH3Eeym0vs1Aeoq4Q _jPxpgFIBEeym0vs1Aeoq4Q _t5FxkFIBEeym0vs1Aeoq4Q _1UOtcFIBEeym0vs1Aeoq4Q _NId-sFICEeym0vs1Aeoq4Q _FWCuwFIDEeym0vs1Aeoq4Q _WH_XEFIFEeym0vs1Aeoq4Q _ZPnPUFIFEeym0vs1Aeoq4Q _nImYYFIFEeym0vs1Aeoq4Q _qIU44FIFEeym0vs1Aeoq4Q" group="_i86q0FH0Eeym0vs1Aeoq4Q _P7fy4FH1Eeym0vs1Aeoq4Q _bEC20FIEEeym0vs1Aeoq4Q _c1vd8FIEEeym0vs1Aeoq4Q _f4AVEFIEEeym0vs1Aeoq4Q">
+              <edge xmi:type="uml:ControlFlow" xmi:id="_nV3fsFICEeym0vs1Aeoq4Q" target="_t5FxkFIBEeym0vs1Aeoq4Q" source="_jPxpgFIBEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_oSdq0FICEeym0vs1Aeoq4Q" target="_1UOtcFIBEeym0vs1Aeoq4Q" source="_t5FxkFIBEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_fl-mYFIDEeym0vs1Aeoq4Q" name="[OK]" inPartition="_i86q0FH0Eeym0vs1Aeoq4Q" target="_NId-sFICEeym0vs1Aeoq4Q" source="_FWCuwFIDEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_5H0o8FIDEeym0vs1Aeoq4Q" name="[NOT OK]" target="_jPxpgFIBEeym0vs1Aeoq4Q" source="_FWCuwFIDEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_hNGqUFIFEeym0vs1Aeoq4Q" target="_ZPnPUFIFEeym0vs1Aeoq4Q" source="_WH_XEFIFEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_yLk9oFIFEeym0vs1Aeoq4Q" target="_1UOtcFIBEeym0vs1Aeoq4Q" source="_ZPnPUFIFEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_21UI4FIFEeym0vs1Aeoq4Q" target="_nImYYFIFEeym0vs1Aeoq4Q" source="_1UOtcFIBEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_8tnZAFIFEeym0vs1Aeoq4Q" target="_qIU44FIFEeym0vs1Aeoq4Q" source="_nImYYFIFEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_LWyB0FIGEeym0vs1Aeoq4Q" target="_FWCuwFIDEeym0vs1Aeoq4Q" source="_qIU44FIFEeym0vs1Aeoq4Q"/>
+              <edge xmi:type="uml:ControlFlow" xmi:id="_Sav-YFIHEeym0vs1Aeoq4Q" target="_jPxpgFIBEeym0vs1Aeoq4Q" source="_uSXYwFH3Eeym0vs1Aeoq4Q"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_i86q0FH0Eeym0vs1Aeoq4Q" name="Artist" node="_uSXYwFH3Eeym0vs1Aeoq4Q _NId-sFICEeym0vs1Aeoq4Q _FWCuwFIDEeym0vs1Aeoq4Q" represents="_8pTeQEckEey5-J7sHBRysQ" edge="_fl-mYFIDEeym0vs1Aeoq4Q"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_P7fy4FH1Eeym0vs1Aeoq4Q" name="Mapping Handler" represents="_L6voAEclEey5-J7sHBRysQ"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_bEC20FIEEeym0vs1Aeoq4Q" name="Sensor System" represents="_DliQkEclEey5-J7sHBRysQ"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_c1vd8FIEEeym0vs1Aeoq4Q" name="Sound Processing System" represents="_-VDoAFHxEeym0vs1Aeoq4Q"/>
+              <group xmi:type="uml:ActivityPartition" xmi:id="_f4AVEFIEEeym0vs1Aeoq4Q" name="Sound Producing System" represents="_zbPzQEckEey5-J7sHBRysQ"/>
+              <node xmi:type="uml:InitialNode" xmi:id="_uSXYwFH3Eeym0vs1Aeoq4Q" name="InitialNode6" outgoing="_Sav-YFIHEeym0vs1Aeoq4Q" inPartition="_i86q0FH0Eeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_jPxpgFIBEeym0vs1Aeoq4Q" name="Map Gesture to Sound" incoming="_5H0o8FIDEeym0vs1Aeoq4Q _Sav-YFIHEeym0vs1Aeoq4Q" outgoing="_nV3fsFICEeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_t5FxkFIBEeym0vs1Aeoq4Q" name="Define New Mapping" incoming="_nV3fsFICEeym0vs1Aeoq4Q" outgoing="_oSdq0FICEeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_1UOtcFIBEeym0vs1Aeoq4Q" name="Route Signals" incoming="_oSdq0FICEeym0vs1Aeoq4Q _yLk9oFIFEeym0vs1Aeoq4Q" outgoing="_21UI4FIFEeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:ActivityFinalNode" xmi:id="_NId-sFICEeym0vs1Aeoq4Q" name="ActivityFinalNode9" incoming="_fl-mYFIDEeym0vs1Aeoq4Q" inPartition="_i86q0FH0Eeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:DecisionNode" xmi:id="_FWCuwFIDEeym0vs1Aeoq4Q" name="DecisionNode15" incoming="_LWyB0FIGEeym0vs1Aeoq4Q" outgoing="_fl-mYFIDEeym0vs1Aeoq4Q _5H0o8FIDEeym0vs1Aeoq4Q" inPartition="_i86q0FH0Eeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_WH_XEFIFEeym0vs1Aeoq4Q" name="Get Inputs" outgoing="_hNGqUFIFEeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_ZPnPUFIFEeym0vs1Aeoq4Q" name="Process Inputs" incoming="_hNGqUFIFEeym0vs1Aeoq4Q" outgoing="_yLk9oFIFEeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_nImYYFIFEeym0vs1Aeoq4Q" name="Synthesize Sound" incoming="_21UI4FIFEeym0vs1Aeoq4Q" outgoing="_8tnZAFIFEeym0vs1Aeoq4Q"/>
+              <node xmi:type="uml:OpaqueAction" xmi:id="_qIU44FIFEeym0vs1Aeoq4Q" name="Produce Sound" incoming="_8tnZAFIFEeym0vs1Aeoq4Q" outgoing="_LWyB0FIGEeym0vs1Aeoq4Q"/>
+            </ownedBehavior>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_5zJRIFHzEeym0vs1Aeoq4Q" memberEnd="_5zJ4MlHzEeym0vs1Aeoq4Q _5zKfQFHzEeym0vs1Aeoq4Q">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zJ4MFHzEeym0vs1Aeoq4Q" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zJ4MVHzEeym0vs1Aeoq4Q" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_5zJ4MlHzEeym0vs1Aeoq4Q" name="artist" type="_8pTeQEckEey5-J7sHBRysQ" association="_5zJRIFHzEeym0vs1Aeoq4Q"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_5zKfQFHzEeym0vs1Aeoq4Q" name="change sensor system" type="_d1R4EFHzEeym0vs1Aeoq4Q" association="_5zJRIFHzEeym0vs1Aeoq4Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_Bu7b8FH0Eeym0vs1Aeoq4Q" memberEnd="_Bu8qElH0Eeym0vs1Aeoq4Q _Bu9RIFH0Eeym0vs1Aeoq4Q">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bu8qEFH0Eeym0vs1Aeoq4Q" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bu8qEVH0Eeym0vs1Aeoq4Q" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_Bu8qElH0Eeym0vs1Aeoq4Q" name="play instrument" type="_7lmtQFHzEeym0vs1Aeoq4Q" association="_Bu7b8FH0Eeym0vs1Aeoq4Q"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_Bu9RIFH0Eeym0vs1Aeoq4Q" name="artist" type="_8pTeQEckEey5-J7sHBRysQ" association="_Bu7b8FH0Eeym0vs1Aeoq4Q"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_d1R4EFHzEeym0vs1Aeoq4Q" name="Change Sensor System" subject="_cSWP8EciEey5-J7sHBRysQ"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_7lmtQFHzEeym0vs1Aeoq4Q" name="Play Instrument" subject="_cSWP8EciEey5-J7sHBRysQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_T0qR8EciEey5-J7sHBRysQ" name="3 System Context">
+          <packagedElement xmi:type="uml:Class" xmi:id="_cSWP8EciEey5-J7sHBRysQ" name="Toolkit in Use" useCase="_i2SwUFHyEeym0vs1Aeoq4Q _d1R4EFHzEeym0vs1Aeoq4Q _7lmtQFHzEeym0vs1Aeoq4Q">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ttzvUEckEey5-J7sHBRysQ" name="Property1" visibility="public" type="_zbPzQEckEey5-J7sHBRysQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_74FcsEckEey5-J7sHBRysQ" name="Property2" type="_8pTeQEckEey5-J7sHBRysQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Kf2XUEclEey5-J7sHBRysQ" name="Property4" type="_L6voAEclEey5-J7sHBRysQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9XcwQFHxEeym0vs1Aeoq4Q" name="Property5" type="_-VDoAFHxEeym0vs1Aeoq4Q" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9h8zQFH1Eeym0vs1Aeoq4Q" name="Property3" type="_DliQkEclEey5-J7sHBRysQ" aggregation="composite"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zbPzQEckEey5-J7sHBRysQ" name="Sound Producing System"/>
           <packagedElement xmi:type="uml:Class" xmi:id="_8pTeQEckEey5-J7sHBRysQ" name="Artist"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_DliQkEclEey5-J7sHBRysQ" name="Sensor Interface"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DliQkEclEey5-J7sHBRysQ" name="Sensor System"/>
           <packagedElement xmi:type="uml:Class" xmi:id="_L6voAEclEey5-J7sHBRysQ" name="Mapping Handler"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-VDoAFHxEeym0vs1Aeoq4Q" name="Sound Processing System"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -92,6 +147,12 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5a-94FH1Eeym0vs1Aeoq4Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5bDPUFH1Eeym0vs1Aeoq4Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
   </uml:Model>
   <Requirements:Requirement xmi:id="_02-jsEcfEey5-J7sHBRysQ" base_NamedElement="_00gegEcfEey5-J7sHBRysQ" id="SN-1" text="&#xD;&#xA;" base_Class="_00gegEcfEey5-J7sHBRysQ"/>
   <Requirements:Requirement xmi:id="_WwcjEEchEey5-J7sHBRysQ" base_NamedElement="_WwaG0EchEey5-J7sHBRysQ" id="SN-1.1" text="The prototyping toolkit shall reduce the time to make a functional DMI prototype" base_Class="_WwaG0EchEey5-J7sHBRysQ"/>
@@ -103,4 +164,10 @@
   <Blocks:Block xmi:id="_8pWhkEckEey5-J7sHBRysQ" base_Class="_8pTeQEckEey5-J7sHBRysQ"/>
   <Blocks:Block xmi:id="_DllT4EclEey5-J7sHBRysQ" base_Class="_DliQkEclEey5-J7sHBRysQ"/>
   <Blocks:Block xmi:id="_L6xdMEclEey5-J7sHBRysQ" base_Class="_L6voAEclEey5-J7sHBRysQ"/>
+  <Blocks:Block xmi:id="_-VSRgFHxEeym0vs1Aeoq4Q" base_Class="_-VDoAFHxEeym0vs1Aeoq4Q"/>
+  <Allocations:AllocateActivityPartition xmi:id="_i9BYgFH0Eeym0vs1Aeoq4Q" base_ActivityPartition="_i86q0FH0Eeym0vs1Aeoq4Q"/>
+  <Allocations:AllocateActivityPartition xmi:id="_P7krYFH1Eeym0vs1Aeoq4Q" base_ActivityPartition="_P7fy4FH1Eeym0vs1Aeoq4Q"/>
+  <Allocations:AllocateActivityPartition xmi:id="_bEF6IFIEEeym0vs1Aeoq4Q" base_ActivityPartition="_bEC20FIEEeym0vs1Aeoq4Q"/>
+  <Allocations:AllocateActivityPartition xmi:id="_c1yhQFIEEeym0vs1Aeoq4Q" base_ActivityPartition="_c1vd8FIEEeym0vs1Aeoq4Q"/>
+  <Allocations:AllocateActivityPartition xmi:id="_f4CxUFIEEeym0vs1Aeoq4Q" base_ActivityPartition="_f4AVEFIEEeym0vs1Aeoq4Q"/>
 </xmi:XMI>
