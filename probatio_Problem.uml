@@ -9,12 +9,12 @@
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_jI5YYEcfEey5-J7sHBRysQ" name="1 Problem Domain">
       <packagedElement xmi:type="uml:Package" xmi:id="_lrBW4EcfEey5-J7sHBRysQ" name="1 Black Box">
-        <packagedElement xmi:type="uml:Package" xmi:id="_oFSZ4EcfEey5-J7sHBRysQ" name="1 Stakeholder Needs">
+        <packagedElement xmi:type="uml:Package" xmi:id="_oFSZ4EcfEey5-J7sHBRysQ" name="1 Stakeholder Needs" URI="">
           <packagedElement xmi:type="uml:Class" xmi:id="_00gegEcfEey5-J7sHBRysQ" name="SN-1 User Needs">
             <nestedClassifier xmi:type="uml:Class" xmi:id="_WwaG0EchEey5-J7sHBRysQ" name="SN-1.1 Speed"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_r9HVIEchEey5-J7sHBRysQ" name="SN-1.2 Initial Paths"/>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_4aZ8QEchEey5-J7sHBRysQ" name="SN-1.3 Modular"/>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_fpy3cEcjEey5-J7sHBRysQ" name="SN-1.4 Music"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_fpy3cEcjEey5-J7sHBRysQ" name="SN-1.4 Expressiveness"/>
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_mA5cEEcmEey5-J7sHBRysQ" name="2 Use Cases">
@@ -195,26 +195,51 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_7GH00FY5EeyS6Y2ZKnDaZA" name="2 White Box">
         <packagedElement xmi:type="uml:Package" xmi:id="_-H91MFY5EeyS6Y2ZKnDaZA" name="2 Functional Analysis">
-          <packagedElement xmi:type="uml:Activity" xmi:id="_w9neUFY6EeyS6Y2ZKnDaZA" name="ChangeMappings" node="_NjfyQFY-EeyS6Y2ZKnDaZA _O67fQFY-EeyS6Y2ZKnDaZA _Q0xVwFY-EeyS6Y2ZKnDaZA _SwusIFY-EeyS6Y2ZKnDaZA _J_C0EFY-EeyS6Y2ZKnDaZA _D67YsFZCEeyS6Y2ZKnDaZA _Ua9AAFZDEeyS6Y2ZKnDaZA">
-            <edge xmi:type="uml:ControlFlow" xmi:id="_Klz8UFZCEeyS6Y2ZKnDaZA" target="_NjfyQFY-EeyS6Y2ZKnDaZA" source="_J_C0EFY-EeyS6Y2ZKnDaZA"/>
-            <edge xmi:type="uml:ControlFlow" xmi:id="_Lsf3kFZCEeyS6Y2ZKnDaZA" target="_D67YsFZCEeyS6Y2ZKnDaZA" source="_NjfyQFY-EeyS6Y2ZKnDaZA"/>
-            <edge xmi:type="uml:ControlFlow" xmi:id="_NwM0sFZCEeyS6Y2ZKnDaZA" name="[OK]" target="_O67fQFY-EeyS6Y2ZKnDaZA" source="_D67YsFZCEeyS6Y2ZKnDaZA"/>
-            <edge xmi:type="uml:ControlFlow" xmi:id="_Z2B-EFZCEeyS6Y2ZKnDaZA" target="_Q0xVwFY-EeyS6Y2ZKnDaZA" source="_O67fQFY-EeyS6Y2ZKnDaZA"/>
-            <edge xmi:type="uml:ControlFlow" xmi:id="_bFPGsFZDEeyS6Y2ZKnDaZA" target="_Ua9AAFZDEeyS6Y2ZKnDaZA" source="_QBCZcFZDEeyS6Y2ZKnDaZA"/>
-            <edge xmi:type="uml:ControlFlow" xmi:id="_KAXvIFZREeyS6Y2ZKnDaZA" name="[NOT OK]" target="_J_C0EFY-EeyS6Y2ZKnDaZA" source="_D67YsFZCEeyS6Y2ZKnDaZA"/>
-            <node xmi:type="uml:OpaqueAction" xmi:id="_J_C0EFY-EeyS6Y2ZKnDaZA" name="Generate Ideas" incoming="_KAXvIFZREeyS6Y2ZKnDaZA" outgoing="_Klz8UFZCEeyS6Y2ZKnDaZA"/>
-            <node xmi:type="uml:OpaqueAction" xmi:id="_NjfyQFY-EeyS6Y2ZKnDaZA" name="Combine Ideas" incoming="_Klz8UFZCEeyS6Y2ZKnDaZA" outgoing="_Lsf3kFZCEeyS6Y2ZKnDaZA"/>
-            <node xmi:type="uml:OpaqueAction" xmi:id="_O67fQFY-EeyS6Y2ZKnDaZA" name="Select the best Ideas" incoming="_NwM0sFZCEeyS6Y2ZKnDaZA" outgoing="_Z2B-EFZCEeyS6Y2ZKnDaZA"/>
-            <node xmi:type="uml:OpaqueAction" xmi:id="_Q0xVwFY-EeyS6Y2ZKnDaZA" name="Externalise the Ideas" incoming="_Z2B-EFZCEeyS6Y2ZKnDaZA">
-              <outputValue xmi:type="uml:OutputPin" xmi:id="_QBCZcFZDEeyS6Y2ZKnDaZA" name="Mapping" outgoing="_bFPGsFZDEeyS6Y2ZKnDaZA">
-                <upperBound xmi:type="uml:LiteralInteger" xmi:id="_QBCZcVZDEeyS6Y2ZKnDaZA" value="1"/>
+          <packagedElement xmi:type="uml:Activity" xmi:id="_w9neUFY6EeyS6Y2ZKnDaZA" name="ChangeMappings" node="_SwusIFY-EeyS6Y2ZKnDaZA _Nl8mEFb-EeyS6Y2ZKnDaZA _OvSzwFb-EeyS6Y2ZKnDaZA _Kmd9MFb-EeyS6Y2ZKnDaZA _MNESIFb_EeyS6Y2ZKnDaZA _B09ZYFcAEeyS6Y2ZKnDaZA _EP4jsFcAEeyS6Y2ZKnDaZA _I49LIFcBEeyS6Y2ZKnDaZA _8L8TsFcFEeyS6Y2ZKnDaZA" group="_806NoFcEEeyS6Y2ZKnDaZA _DCPSkFcFEeyS6Y2ZKnDaZA _YgBp0FcFEeyS6Y2ZKnDaZA _6drQgFcEEeyS6Y2ZKnDaZA">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_ipkJ0Fb-EeyS6Y2ZKnDaZA" target="_OvSzwFb-EeyS6Y2ZKnDaZA" source="_SwusIFY-EeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_Aqe_wFb_EeyS6Y2ZKnDaZA" name="New Devices" target="_867k0Fb-EeyS6Y2ZKnDaZA" source="_5ZMjcFb-EeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_ZJ-0gFb_EeyS6Y2ZKnDaZA" name="[NOT DONE]" target="_Kmd9MFb-EeyS6Y2ZKnDaZA" source="_MNESIFb_EeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_HvI40FcAEeyS6Y2ZKnDaZA" name="Sensors" target="_-4BHIFb_EeyS6Y2ZKnDaZA" source="_B09ZYFcAEeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_JyQnIFcAEeyS6Y2ZKnDaZA" name="Synths" target="__2HuIFb_EeyS6Y2ZKnDaZA" source="_EP4jsFcAEeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_L51iMFcBEeyS6Y2ZKnDaZA" target="_I49LIFcBEeyS6Y2ZKnDaZA" source="_Kmd9MFb-EeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_M4bRYFcBEeyS6Y2ZKnDaZA" target="_MNESIFb_EeyS6Y2ZKnDaZA" source="_I49LIFcBEeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_9jWLgFcFEeyS6Y2ZKnDaZA" name="Mapping" target="_8L8TsFcFEeyS6Y2ZKnDaZA" source="_rRX3sFb_EeyS6Y2ZKnDaZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="__ySvUFcFEeyS6Y2ZKnDaZA" name="[DONE]" inPartition="_806NoFcEEeyS6Y2ZKnDaZA" target="_Nl8mEFb-EeyS6Y2ZKnDaZA" source="_MNESIFb_EeyS6Y2ZKnDaZA"/>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_6drQgFcEEeyS6Y2ZKnDaZA" name=":UI System" node="_I49LIFcBEeyS6Y2ZKnDaZA" represents="_4gLwcFcBEeyS6Y2ZKnDaZA"/>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_806NoFcEEeyS6Y2ZKnDaZA" name=":Session Management System" node="_Nl8mEFb-EeyS6Y2ZKnDaZA _MNESIFb_EeyS6Y2ZKnDaZA _8L8TsFcFEeyS6Y2ZKnDaZA" represents="_HmH00FcCEeyS6Y2ZKnDaZA" edge="__ySvUFcFEeyS6Y2ZKnDaZA"/>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_DCPSkFcFEeyS6Y2ZKnDaZA" name=":Discovery System" node="_OvSzwFb-EeyS6Y2ZKnDaZA _SwusIFY-EeyS6Y2ZKnDaZA" represents="_CWThAFcCEeyS6Y2ZKnDaZA"/>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_YgBp0FcFEeyS6Y2ZKnDaZA" name=":Routing System" node="_Kmd9MFb-EeyS6Y2ZKnDaZA" represents="_fAq-QFcDEeyS6Y2ZKnDaZA"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_SwusIFY-EeyS6Y2ZKnDaZA" name="Start" outgoing="_ipkJ0Fb-EeyS6Y2ZKnDaZA" inPartition="_DCPSkFcFEeyS6Y2ZKnDaZA"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_Kmd9MFb-EeyS6Y2ZKnDaZA" name="Update Connections" incoming="_ZJ-0gFb_EeyS6Y2ZKnDaZA" outgoing="_L51iMFcBEeyS6Y2ZKnDaZA" inPartition="_YgBp0FcFEeyS6Y2ZKnDaZA">
+              <inputValue xmi:type="uml:InputPin" xmi:id="_867k0Fb-EeyS6Y2ZKnDaZA" name="NewDevices" incoming="_Aqe_wFb_EeyS6Y2ZKnDaZA">
+                <upperBound xmi:type="uml:LiteralInteger" xmi:id="_868L4Fb-EeyS6Y2ZKnDaZA" value="1"/>
+              </inputValue>
+            </node>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_Nl8mEFb-EeyS6Y2ZKnDaZA" name="Save Mapping" incoming="__ySvUFcFEeyS6Y2ZKnDaZA" inPartition="_806NoFcEEeyS6Y2ZKnDaZA">
+              <outputValue xmi:type="uml:OutputPin" xmi:id="_rRX3sFb_EeyS6Y2ZKnDaZA" name="Mapping" outgoing="_9jWLgFcFEeyS6Y2ZKnDaZA">
+                <upperBound xmi:type="uml:LiteralInteger" xmi:id="_rRYewFb_EeyS6Y2ZKnDaZA" value="1"/>
               </outputValue>
             </node>
-            <node xmi:type="uml:InitialNode" xmi:id="_SwusIFY-EeyS6Y2ZKnDaZA" name="Start"/>
-            <node xmi:type="uml:DecisionNode" xmi:id="_D67YsFZCEeyS6Y2ZKnDaZA" name="HypothesisCheck" incoming="_Lsf3kFZCEeyS6Y2ZKnDaZA" outgoing="_NwM0sFZCEeyS6Y2ZKnDaZA _KAXvIFZREeyS6Y2ZKnDaZA"/>
-            <node xmi:type="uml:ActivityParameterNode" xmi:id="_Ua9AAFZDEeyS6Y2ZKnDaZA" name="Mapping" incoming="_bFPGsFZDEeyS6Y2ZKnDaZA">
-              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_Ua9nEFZDEeyS6Y2ZKnDaZA" value="1"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_OvSzwFb-EeyS6Y2ZKnDaZA" name="Update Inputs/Outputs" incoming="_ipkJ0Fb-EeyS6Y2ZKnDaZA" inPartition="_DCPSkFcFEeyS6Y2ZKnDaZA">
+              <inputValue xmi:type="uml:InputPin" xmi:id="_-4BHIFb_EeyS6Y2ZKnDaZA" name="Sensors" incoming="_HvI40FcAEeyS6Y2ZKnDaZA">
+                <upperBound xmi:type="uml:LiteralInteger" xmi:id="_-4CVQFb_EeyS6Y2ZKnDaZA" value="1"/>
+              </inputValue>
+              <inputValue xmi:type="uml:InputPin" xmi:id="__2HuIFb_EeyS6Y2ZKnDaZA" name="Synths" incoming="_JyQnIFcAEeyS6Y2ZKnDaZA">
+                <upperBound xmi:type="uml:LiteralInteger" xmi:id="__2IVMFb_EeyS6Y2ZKnDaZA" value="1"/>
+              </inputValue>
+              <outputValue xmi:type="uml:OutputPin" xmi:id="_5ZMjcFb-EeyS6Y2ZKnDaZA" name="NewDevices" outgoing="_Aqe_wFb_EeyS6Y2ZKnDaZA">
+                <upperBound xmi:type="uml:LiteralInteger" xmi:id="_5ZNxkFb-EeyS6Y2ZKnDaZA" value="1"/>
+              </outputValue>
             </node>
+            <node xmi:type="uml:DecisionNode" xmi:id="_MNESIFb_EeyS6Y2ZKnDaZA" name="MappingDecision" incoming="_M4bRYFcBEeyS6Y2ZKnDaZA" outgoing="_ZJ-0gFb_EeyS6Y2ZKnDaZA __ySvUFcFEeyS6Y2ZKnDaZA" inPartition="_806NoFcEEeyS6Y2ZKnDaZA"/>
+            <node xmi:type="uml:ActivityParameterNode" xmi:id="_B09ZYFcAEeyS6Y2ZKnDaZA" name="SensorList" outgoing="_HvI40FcAEeyS6Y2ZKnDaZA">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_B0-AcFcAEeyS6Y2ZKnDaZA" value="1"/>
+            </node>
+            <node xmi:type="uml:ActivityParameterNode" xmi:id="_EP4jsFcAEeyS6Y2ZKnDaZA" name="SynthesisList" outgoing="_JyQnIFcAEeyS6Y2ZKnDaZA">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_EP5KwFcAEeyS6Y2ZKnDaZA" value="1"/>
+            </node>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_I49LIFcBEeyS6Y2ZKnDaZA" name="Update UI" incoming="_L51iMFcBEeyS6Y2ZKnDaZA" outgoing="_M4bRYFcBEeyS6Y2ZKnDaZA" inPartition="_6drQgFcEEeyS6Y2ZKnDaZA"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_8L8TsFcFEeyS6Y2ZKnDaZA" name="End" incoming="_9jWLgFcFEeyS6Y2ZKnDaZA" inPartition="_806NoFcEEeyS6Y2ZKnDaZA"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Activity" xmi:id="_CGf2YFYxEeyS6Y2ZKnDaZA" name="Change Sensor System" node="_aaPHEFYxEeyS6Y2ZKnDaZA _mjnTsFYxEeyS6Y2ZKnDaZA _rqOBIFYxEeyS6Y2ZKnDaZA _X3xU4FYyEeyS6Y2ZKnDaZA _CGnV4FZXEeyS6Y2ZKnDaZA _qIhdsFZZEeyS6Y2ZKnDaZA _OvMfoFZaEeyS6Y2ZKnDaZA _eU8FcFZaEeyS6Y2ZKnDaZA" group="_VNaSgFZVEeyS6Y2ZKnDaZA _eo_msFZWEeyS6Y2ZKnDaZA _ApYtcFZYEeyS6Y2ZKnDaZA">
             <edge xmi:type="uml:ControlFlow" xmi:id="_wecawFZVEeyS6Y2ZKnDaZA" target="_mjnTsFYxEeyS6Y2ZKnDaZA" source="_aaPHEFYxEeyS6Y2ZKnDaZA"/>
@@ -282,6 +307,15 @@
               <ownedAttribute xmi:type="uml:Property" xmi:id="_ohqfgFZXEeyS6Y2ZKnDaZA" name="Control" visibility="public"/>
               <ownedAttribute xmi:type="uml:Property" xmi:id="_r-FjEFZXEeyS6Y2ZKnDaZA" name="SensorChange" visibility="public"/>
             </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZA8X0FcAEeyS6Y2ZKnDaZA" name="Signals">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_bdcPcFcAEeyS6Y2ZKnDaZA" name="ID"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_gYt2oFcAEeyS6Y2ZKnDaZA" name="Properties"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_kGLm4FcAEeyS6Y2ZKnDaZA" name="Data"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Tz3ZgFcBEeyS6Y2ZKnDaZA" name="Mapping I/O">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_aM-3sFcBEeyS6Y2ZKnDaZA" name="input data"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_dRubEFcBEeyS6Y2ZKnDaZA" name="output data"/>
+            </packagedElement>
           </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_BSxpsFZNEeyS6Y2ZKnDaZA" name="2 Logical Subsystem">
             <packagedElement xmi:type="uml:Class" xmi:id="_FrbSsFZSEeyS6Y2ZKnDaZA" name="Data Processing System">
@@ -299,6 +333,18 @@
               <ownedAttribute xmi:type="uml:Port" xmi:id="_HKsFAFZdEeyS6Y2ZKnDaZA" name=":Energy" type="_0DQCcFZOEeyS6Y2ZKnDaZA" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_cswfUFZdEeyS6Y2ZKnDaZA" name=":ArtistControl" type="_UIKPwFZXEeyS6Y2ZKnDaZA" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_-AuvgFZfEeyS6Y2ZKnDaZA" name=":Data" type="_0OIf8FZSEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_4gLwcFcBEeyS6Y2ZKnDaZA" name="UI System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_Bi1x0FcEEeyS6Y2ZKnDaZA" name=":Mapping I/O" type="_Tz3ZgFcBEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_CWThAFcCEeyS6Y2ZKnDaZA" name="Discovery System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_8oLrIFcCEeyS6Y2ZKnDaZA" name=":Signals" type="_ZA8X0FcAEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HmH00FcCEeyS6Y2ZKnDaZA" name="Session Management System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_VAvU8FcEEeyS6Y2ZKnDaZA" name=":Mapping I/O" type="_Tz3ZgFcBEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_fAq-QFcDEeyS6Y2ZKnDaZA" name="Routing System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_ofELUFcDEeyS6Y2ZKnDaZA" name=":Signals" type="_ZA8X0FcAEeyS6Y2ZKnDaZA" aggregation="composite"/>
             </packagedElement>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_DliQkEclEey5-J7sHBRysQ" name="Sensor Unit">
@@ -345,12 +391,35 @@
               <end xmi:type="uml:ConnectorEnd" xmi:id="_D2m9wFZgEeyS6Y2ZKnDaZA" partWithPort="_IaGtMFZXEeyS6Y2ZKnDaZA" role="_-AuvgFZfEeyS6Y2ZKnDaZA"/>
               <end xmi:type="uml:ConnectorEnd" xmi:id="_D2m9wVZgEeyS6Y2ZKnDaZA" role="_DUh3UFZTEeyS6Y2ZKnDaZA"/>
             </ownedConnector>
-            <ownedConnector xmi:type="uml:Connector" xmi:id="_Ia5BQFZgEeyS6Y2ZKnDaZA" name="Connector17">
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_Ia5oUFZgEeyS6Y2ZKnDaZA" partWithPort="_IaGtMFZXEeyS6Y2ZKnDaZA" role="_-AuvgFZfEeyS6Y2ZKnDaZA"/>
-              <end xmi:type="uml:ConnectorEnd" xmi:id="_Ia5oUVZgEeyS6Y2ZKnDaZA" partWithPort="_C58pkFZSEeyS6Y2ZKnDaZA" role="_N-h74FZTEeyS6Y2ZKnDaZA"/>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_srKcgFb8EeyS6Y2ZKnDaZA" name="Connector17">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_srNf0Fb8EeyS6Y2ZKnDaZA" partWithPort="_IaGtMFZXEeyS6Y2ZKnDaZA" role="_-AuvgFZfEeyS6Y2ZKnDaZA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_srNf0Vb8EeyS6Y2ZKnDaZA" partWithPort="_C58pkFZSEeyS6Y2ZKnDaZA" role="_N-h74FZTEeyS6Y2ZKnDaZA"/>
             </ownedConnector>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_L6voAEclEey5-J7sHBRysQ" name="Mapping Unit"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_L6voAEclEey5-J7sHBRysQ" name="Mapping Unit">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_jikuEFcBEeyS6Y2ZKnDaZA" name=":Mapping I/O" type="_Tz3ZgFcBEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_kcQvIFcBEeyS6Y2ZKnDaZA" name=":Signals" type="_ZA8X0FcAEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2M1NwFcBEeyS6Y2ZKnDaZA" name="Property3" type="_4gLwcFcBEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9blTcFcBEeyS6Y2ZKnDaZA" name="Property4" type="_CWThAFcCEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_FCTNMFcCEeyS6Y2ZKnDaZA" name="Property5" type="_HmH00FcCEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_a1ZQoFcDEeyS6Y2ZKnDaZA" name="Property6" type="_fAq-QFcDEeyS6Y2ZKnDaZA" aggregation="composite"/>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_tFeVwFcDEeyS6Y2ZKnDaZA" name="Connector7">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_tFe80FcDEeyS6Y2ZKnDaZA" partWithPort="_9blTcFcBEeyS6Y2ZKnDaZA" role="_8oLrIFcCEeyS6Y2ZKnDaZA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_tFe80VcDEeyS6Y2ZKnDaZA" role="_kcQvIFcBEeyS6Y2ZKnDaZA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_uDutwFcDEeyS6Y2ZKnDaZA" name="Connector8">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_uDvU0FcDEeyS6Y2ZKnDaZA" partWithPort="_a1ZQoFcDEeyS6Y2ZKnDaZA" role="_ofELUFcDEeyS6Y2ZKnDaZA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_uDv74FcDEeyS6Y2ZKnDaZA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_hzfOsFcEEeyS6Y2ZKnDaZA" name="Connector9">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_hzf1wFcEEeyS6Y2ZKnDaZA" partWithPort="_FCTNMFcCEeyS6Y2ZKnDaZA" role="_VAvU8FcEEeyS6Y2ZKnDaZA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_hzf1wVcEEeyS6Y2ZKnDaZA" role="_jikuEFcBEeyS6Y2ZKnDaZA"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_ikSZgFcEEeyS6Y2ZKnDaZA" name="Connector10">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_ikTAkFcEEeyS6Y2ZKnDaZA" partWithPort="_2M1NwFcBEeyS6Y2ZKnDaZA" role="_Bi1x0FcEEeyS6Y2ZKnDaZA"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_ikTAkVcEEeyS6Y2ZKnDaZA" partWithPort="_FCTNMFcCEeyS6Y2ZKnDaZA" role="_VAvU8FcEEeyS6Y2ZKnDaZA"/>
+            </ownedConnector>
+          </packagedElement>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -426,7 +495,7 @@
   <Requirements:Requirement xmi:id="_r9LmkEchEey5-J7sHBRysQ" base_NamedElement="_r9HVIEchEey5-J7sHBRysQ" id="SN-1.2" text="The prototyping toolkit shall provide initial paths for the user to develop." base_Class="_r9HVIEchEey5-J7sHBRysQ"/>
   <Requirements:Requirement xmi:id="_4acYgEchEey5-J7sHBRysQ" base_NamedElement="_4aZ8QEchEey5-J7sHBRysQ" id="SN-1.3" text="The prototyping toolkit will have a modular environment." base_Class="_4aZ8QEchEey5-J7sHBRysQ"/>
   <Blocks:Block xmi:id="_cSZTQEciEey5-J7sHBRysQ" base_Class="_cSWP8EciEey5-J7sHBRysQ"/>
-  <Requirements:Requirement xmi:id="_fp16wEcjEey5-J7sHBRysQ" base_NamedElement="_fpy3cEcjEey5-J7sHBRysQ" id="SN-1.4" text="The toolkit shall be able to generate sound.&#xD;&#xA;" base_Class="_fpy3cEcjEey5-J7sHBRysQ"/>
+  <Requirements:Requirement xmi:id="_fp16wEcjEey5-J7sHBRysQ" base_NamedElement="_fpy3cEcjEey5-J7sHBRysQ" id="SN-1.4" text="The toolkit shall be compatible with multiple sensor types" base_Class="_fpy3cEcjEey5-J7sHBRysQ"/>
   <Blocks:Block xmi:id="_zbS2kEckEey5-J7sHBRysQ" base_Class="_zbPzQEckEey5-J7sHBRysQ"/>
   <Blocks:Block xmi:id="_8pWhkEckEey5-J7sHBRysQ" base_Class="_8pTeQEckEey5-J7sHBRysQ"/>
   <Blocks:Block xmi:id="_DllT4EclEey5-J7sHBRysQ" base_Class="_DliQkEclEey5-J7sHBRysQ"/>
@@ -490,6 +559,28 @@
   <Blocks:NestedConnectorEnd xmi:id="_Lep_IFZeEeyS6Y2ZKnDaZA" base_Element="_LepYEVZeEeyS6Y2ZKnDaZA" propertyPath="_C58pkFZSEeyS6Y2ZKnDaZA" base_ConnectorEnd="_LepYEVZeEeyS6Y2ZKnDaZA"/>
   <PortsAndFlows:ProxyPort xmi:id="_-AxLwFZfEeyS6Y2ZKnDaZA" base_Port="_-AuvgFZfEeyS6Y2ZKnDaZA"/>
   <Blocks:NestedConnectorEnd xmi:id="_D2m9wlZgEeyS6Y2ZKnDaZA" base_Element="_D2m9wFZgEeyS6Y2ZKnDaZA" propertyPath="_IaGtMFZXEeyS6Y2ZKnDaZA" base_ConnectorEnd="_D2m9wFZgEeyS6Y2ZKnDaZA"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Ia6PYFZgEeyS6Y2ZKnDaZA" base_Element="_Ia5oUFZgEeyS6Y2ZKnDaZA" propertyPath="_IaGtMFZXEeyS6Y2ZKnDaZA" base_ConnectorEnd="_Ia5oUFZgEeyS6Y2ZKnDaZA"/>
-  <Blocks:NestedConnectorEnd xmi:id="_Ia6PYVZgEeyS6Y2ZKnDaZA" base_Element="_Ia5oUVZgEeyS6Y2ZKnDaZA" propertyPath="_C58pkFZSEeyS6Y2ZKnDaZA" base_ConnectorEnd="_Ia5oUVZgEeyS6Y2ZKnDaZA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_srNf0lb8EeyS6Y2ZKnDaZA" base_Element="_srNf0Fb8EeyS6Y2ZKnDaZA" propertyPath="_IaGtMFZXEeyS6Y2ZKnDaZA" base_ConnectorEnd="_srNf0Fb8EeyS6Y2ZKnDaZA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_srOG4Fb8EeyS6Y2ZKnDaZA" base_Element="_srNf0Vb8EeyS6Y2ZKnDaZA" propertyPath="_C58pkFZSEeyS6Y2ZKnDaZA" base_ConnectorEnd="_srNf0Vb8EeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_ZA-0EFcAEeyS6Y2ZKnDaZA" base_Class="_ZA8X0FcAEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_bdersFcAEeyS6Y2ZKnDaZA" base_Property="_bdcPcFcAEeyS6Y2ZKnDaZA" direction="in"/>
+  <PortsAndFlows:FlowProperty xmi:id="_gYwS4FcAEeyS6Y2ZKnDaZA" base_Property="_gYt2oFcAEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_kGODIFcAEeyS6Y2ZKnDaZA" base_Property="_kGLm4FcAEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_Tz51wFcBEeyS6Y2ZKnDaZA" base_Class="_Tz3ZgFcBEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_aNBT8FcBEeyS6Y2ZKnDaZA" base_Property="_aM-3sFcBEeyS6Y2ZKnDaZA" direction="in"/>
+  <PortsAndFlows:FlowProperty xmi:id="_dRw3UFcBEeyS6Y2ZKnDaZA" base_Property="_dRubEFcBEeyS6Y2ZKnDaZA" direction="out"/>
+  <PortsAndFlows:ProxyPort xmi:id="_jimjQFcBEeyS6Y2ZKnDaZA" base_Port="_jikuEFcBEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:ProxyPort xmi:id="_kcTLYFcBEeyS6Y2ZKnDaZA" base_Port="_kcQvIFcBEeyS6Y2ZKnDaZA"/>
+  <Blocks:Block xmi:id="_4gOMsFcBEeyS6Y2ZKnDaZA" base_Class="_4gLwcFcBEeyS6Y2ZKnDaZA"/>
+  <Blocks:Block xmi:id="_CWVWMFcCEeyS6Y2ZKnDaZA" base_Class="_CWThAFcCEeyS6Y2ZKnDaZA"/>
+  <Blocks:Block xmi:id="_HmJqAFcCEeyS6Y2ZKnDaZA" base_Class="_HmH00FcCEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:ProxyPort xmi:id="_8oNgUFcCEeyS6Y2ZKnDaZA" base_Port="_8oLrIFcCEeyS6Y2ZKnDaZA"/>
+  <Blocks:Block xmi:id="_fAtagFcDEeyS6Y2ZKnDaZA" base_Class="_fAq-QFcDEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:ProxyPort xmi:id="_ofGnkFcDEeyS6Y2ZKnDaZA" base_Port="_ofELUFcDEeyS6Y2ZKnDaZA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_tFe80lcDEeyS6Y2ZKnDaZA" base_Element="_tFe80FcDEeyS6Y2ZKnDaZA" propertyPath="_9blTcFcBEeyS6Y2ZKnDaZA" base_ConnectorEnd="_tFe80FcDEeyS6Y2ZKnDaZA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_uDv74VcDEeyS6Y2ZKnDaZA" base_Element="_uDvU0FcDEeyS6Y2ZKnDaZA" propertyPath="_a1ZQoFcDEeyS6Y2ZKnDaZA" base_ConnectorEnd="_uDvU0FcDEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Bi4OEFcEEeyS6Y2ZKnDaZA" base_Port="_Bi1x0FcEEeyS6Y2ZKnDaZA"/>
+  <PortsAndFlows:ProxyPort xmi:id="_VAxKIFcEEeyS6Y2ZKnDaZA" base_Port="_VAvU8FcEEeyS6Y2ZKnDaZA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_hzf1wlcEEeyS6Y2ZKnDaZA" base_Element="_hzf1wFcEEeyS6Y2ZKnDaZA" propertyPath="_FCTNMFcCEeyS6Y2ZKnDaZA" base_ConnectorEnd="_hzf1wFcEEeyS6Y2ZKnDaZA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ikTAklcEEeyS6Y2ZKnDaZA" base_Element="_ikTAkFcEEeyS6Y2ZKnDaZA" propertyPath="_2M1NwFcBEeyS6Y2ZKnDaZA" base_ConnectorEnd="_ikTAkFcEEeyS6Y2ZKnDaZA"/>
+  <Blocks:NestedConnectorEnd xmi:id="_ikTnoFcEEeyS6Y2ZKnDaZA" base_Element="_ikTAkVcEEeyS6Y2ZKnDaZA" propertyPath="_FCTNMFcCEeyS6Y2ZKnDaZA" base_ConnectorEnd="_ikTAkVcEEeyS6Y2ZKnDaZA"/>
 </xmi:XMI>
